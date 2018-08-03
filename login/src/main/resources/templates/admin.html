@@ -1,0 +1,8 @@
+<html>
+<body>
+<h1 th:inline="text">Bem-vindo [[${#httpServletRequest.remoteUser}]]!</h1>
+<form th:action="@{/logout}" method="post">
+<input type="submit" value="logout"/>
+</form>
+</body>
+</html>
